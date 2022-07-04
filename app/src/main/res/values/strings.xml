@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Tools</string>
+    <string name="nav_home">首页</string>
+    <string name="nav_person">个人</string>
+</resources>
