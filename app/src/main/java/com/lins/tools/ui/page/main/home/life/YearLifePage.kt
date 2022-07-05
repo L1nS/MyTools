@@ -27,12 +27,13 @@ fun YearLifePage(
     viewModel: YearLifeViewModel = YearLifeViewModel()
 ) {
 
+    println("RouteName YEAR_LIFE page")
     val imageUrl = "https://api.yimian.xyz/img?type=wallpaper"
     val nowPercent = viewModel.getRemainDayPercent()
     Column(
         modifier = Modifier.fillMaxWidth()
     ) {
-        NormalToolbar(title = "Title", onBack = {
+        NormalToolbar(title = "Calendar", onBack = {
             navCtrl.back()
         })
 

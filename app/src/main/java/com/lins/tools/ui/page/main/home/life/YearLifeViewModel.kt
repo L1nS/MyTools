@@ -13,7 +13,6 @@ class YearLifeViewModel : ViewModel() {
         val lastDay = Calendar.getInstance()
         lastDay.set(getYear(), 11, 31)
         nowDay.set(getYear(), getMonth() - 1, getDay())
-        println("${lastDay.get(Calendar.DAY_OF_YEAR)},${nowDay.get(Calendar.DAY_OF_YEAR)}")
         return lastDay.get(Calendar.DAY_OF_YEAR) - nowDay.get(Calendar.DAY_OF_YEAR)
     }
 
@@ -22,7 +21,6 @@ class YearLifeViewModel : ViewModel() {
         val lastDay = Calendar.getInstance()
         lastDay.set(getYear(), 11, 31)
         nowDay.set(getYear(), getMonth() - 1, getDay())
-        println("${lastDay.get(Calendar.DAY_OF_YEAR)},${nowDay.get(Calendar.DAY_OF_YEAR)}")
         return nowDay.get(Calendar.DAY_OF_YEAR) * 100 / lastDay.get(Calendar.DAY_OF_YEAR)
     }
 
